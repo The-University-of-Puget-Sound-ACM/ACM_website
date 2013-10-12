@@ -1,0 +1,81 @@
+/*
+		Style sheet by Todd Detweiler
+		Created for use in software engeneering lab #3 but based off of an electronic commerce css eric and I did.
+		9/22/2013
+*/		
+		/*
+			Set the style for the page
+		*/
+		body{
+			margin: 0px;
+		}
+		
+		h2{
+			color: #FFFFFF;
+			font-weight:bold;
+		}
+		
+		h3{
+			color: #FFFFFF;
+			text-align:center;
+		}
+
+		/*
+			Style for the banner at the top
+			credit to http://apod.nasa.gov/apod/ap060424.html, Ulrich Beinert
+		*/
+		div.Banner{
+			height: 170px;
+			position: relative;
+			background-image:url('../assets/tdetweiler/Banner.jpg'); 
+		}
+		
+		div.sideBar{
+			width:200px;
+			top:170px;
+			bottom: 0px;
+			position: fixed;
+			z-index: -1;
+			background-color: #002E8A;
+		}
+		
+		div.mainArea{
+			top: 170px;
+			margin-left: 200px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			position: fixed;
+			overflow: auto;
+			background-color:#002E8A;
+			z-index: -2;
+		}
+		
+		/*Link appearance for the side nav, built off of a format eric and I created for cs250
+		*/
+		ul#navlist li a 
+		{
+			width: 150px;
+			height:20px;
+			padding:5px;
+			display:block;
+
+			color:#fff;
+			text-decoration: none;
+			font-size:8pt;
+			font-family:arial;
+			line-height:20px;
+			text-align:center;
+
+			border-right:1px solid #fff;
+			border-left:1px solid #fff;
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+			background: #003663;
+		}
+		
+		ul#navlist 
+		{
+			display: inline;
+			list-style: none;
+		}

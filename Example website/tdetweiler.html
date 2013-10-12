@@ -1,0 +1,84 @@
+<!-- This is the standard DOCTYPE tag we will use -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	
+	<head>
+	
+		<!-- 
+			This is a art gallery web page featuring art of stars for CS240. This website is meant to be created for
+			cs240 lab #3.
+			
+			tdetweiler.html
+			Author: Todd Detweiler
+			Date: 09/22/2013
+			This page is intended to intoduce the class to html, css, and javascript.
+		-->
+		
+		<!-- declare the character encoding (recommended) -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		
+		<!-- The comment tag -->
+		
+		<!--******************************************* -->
+		<!-- a link to an external style sheet -->
+		<link rel="stylesheet" href="stylesheets/Todd_Detweiler_stylesheet.css"/>
+		
+		<!--*********************************** -->
+		<!-- the title tag is required -->
+		<title>Star Art</title>
+		
+	</head>
+	<body onload="makeStar();">
+	<script type="text/javascript" src="javascript/tdetweiler_Script.js"></script>
+		
+		<!-- The body contains the content to be displayed -->
+		<!--********************************************* -->
+		
+		<!-- display the top banner -->
+		<div class="Banner">
+		</div> <!--End top banner-->
+		
+		<!-- create a side bar for navigation -->
+		<div class="sideBar"><center>
+			<ul id="navlist">
+			<li><a href="tdetweiler.html">Home Page n' stuff</a></li>
+			<li><a href="http://google.com">Google n' stuff</a></li>
+			<li><a href="http://www.ltdartgallery.com/category/star-wars">Star wars art n' stuff</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/The_Starry_Night">Starry night info n' stuff</a></li>
+			<li><a href="dchu.html">Darren Chu's page n' stuff</a></li>
+			<li><a href="billyrathje.html">Billy Rathje's page n' stuff</a></li>
+			<li><a href="http://xplsv.com/prods/demos/xplsv_orsotheysay/">Cool animation n' stuff</a></li>
+			</ul>
+			</br>
+			</br>
+			<h2>Exhibit brought to you by:
+			</br>
+			Todd Detweiler</h2>
+			</center>
+		</div>
+		
+		<div class ="mainArea">
+			<h3> Welcome to my art gallery! 
+			</br>
+			Here, appreciation is brought to all sorts of star/sky art such as 
+			Van Gogh's Starry Night to the lone photographer's shot of the sky. </br> Please take some time 
+			to browse around and see what you might enjoy! </br> And don't forget if you see something you like just click on it to get more information!
+			</br></br>
+			
+			<table>
+			<tr>
+			
+			<td><input type ="image" src="assets/tdetweiler/Starry-Night.jpg" alt = "Van Gogh's Starry Night"  onclick = "vanGoghInfo()"></td>
+			<td><input type ="image" src="assets/tdetweiler/Starry-Night-2.jpg" alt = "Alex Ruiz's Starry Night" onclick = "alexRuizInfo()"></td>
+			</tr>
+			<tr>
+			<td><input type ="image" src="assets/tdetweiler/Valley-of-the-stars.jpg" alt = "Valley of the stars" onclick = "valleyInfo()"></td>
+			<td><input type ="image" src="assets/tdetweiler/starscape.jpg" alt = "Chris's starscape" onclick = "starscapeInfo()"></td>
+			</tr>
+			</table>
+			<!-- canvas to display the twinkling star. Inspiration and format found at http://falcon80.com/HTMLCanvas/Animation/stars.html modified and adapted by me. -->
+			<canvas id="canvas" width="370" height="370" ></canvas>
+		</div>
+	</body>
+	
+</html>
