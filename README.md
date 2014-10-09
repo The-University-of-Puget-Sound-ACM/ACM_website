@@ -4,7 +4,7 @@ ACM_website
 Website for the UPS ACM club.
 
 
-For acm website please fork your own copy by pressing the fork repository button. 
+For acm website please create your own branch and then clone it to your desktop. 
 
 Feel free to do all of your own edits using pages like w3schools, google, and other sources for inspiration.
 
