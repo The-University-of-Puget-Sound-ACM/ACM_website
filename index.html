@@ -28,27 +28,29 @@
 	</head>
 	<body>
 <!-- The main banner at the top. -->
- <div id = header><h1> University of Puget Sound ACM </h1></div>
+ <div id = header><div id = logo><img src = '/ACM_Website/upslogo.png'></div><h1> University of Puget Sound ACM </h1></div>
  <!-- Some kind of quote or other secondary headline. -->
  <div id = quote>“Computers can see everything,<br>But can they see why kids love the taste of Cinnamon Toast Crunch?”</div>
- <br>
- <br>
  <hr>
  <!-- A navigation bar with links to relevant sites or other pages. -->
- <!-- These should all just be anchor links of the class 'button'. -->
  <div id = nav>
-	 <a href='https://github.com/UPS-ACM' class = 'button'>GitHub</a>
-	 <a href='http://wacmups.wix.com/women' class = 'button'>WACM</a></div>
+	 <a href='https://github.com/UPS-ACM'>GitHub</a>
+	 <a href='http://wacmups.wix.com/women'>WACM</a>
+	 <a href='https://www.acm.org/'>National ACM</a>
+ </div>
 <!-- A place to put a description or whatever other interesting text there is to post. -->
 <div id = maintext>
+	<h2>Welcome to ACM</h2>
+	<h3>Heading</h3>
 	<p/>'Come, my head's free at last!' said Alice in a tone of delight, which changed into alarm in another moment, when she found that her shoulders were nowhere to be found: all she could see, when she looked down, was an immense length of neck, which seemed to rise like a stalk out of a sea of green leaves that lay far below her.
-'What CAN all that green stuff be?' said Alice. 'And where HAVE my shoulders got to? And oh, my poor hands, how is it I can't see you?' She was moving them about as she spoke, but no result seemed to follow, except a little shaking among the distant green leaves.
-As there seemed to be no chance of getting her hands up to her head, she tried to get her head down to them, and was delighted to find that her neck would bend about easily in any direction, like a serpent. She had just succeeded in curving it down into a graceful zigzag, and was going to dive in among the leaves, which she found to be nothing but the tops of the trees under which she had been wandering, when a sharp hiss made her draw back in a hurry: a large pigeon had flown into her face, and was beating her violently with its wings.
-'Serpent!' screamed the Pigeon.
-'I'm NOT a serpent!' said Alice indignantly. 'Let me alone!'
-'Serpent, I say again!' repeated the Pigeon, but in a more subdued tone, and added with a kind of sob, 'I've tried every way, and nothing seems to suit them!'
-'I haven't the least idea what you're talking about,' said Alice.
-'I've tried the roots of trees, and I've tried banks, and I've tried hedges,' the Pigeon went on, without attending to her; 'but those serpents! There's no pleasing them!'
+<p>'What CAN all that green stuff be?' said Alice. 'And where HAVE my shoulders got to? And oh, my poor hands, how is it I can't see you?' She was moving them about as she spoke, but no result seemed to follow, except a little shaking among the distant green leaves.
+<p/>As there seemed to be no chance of getting her hands up to her head, she tried to get her head down to them, and was delighted to find that her neck would bend about easily in any direction, like a serpent. She had just succeeded in curving it down into a graceful zigzag, and was going to dive in among the leaves, which she found to be nothing but the tops of the trees under which she had been wandering, when a sharp hiss made her draw back in a hurry: a large pigeon had flown into her face, and was beating her violently with its wings.
+<p/>'Serpent!' screamed the Pigeon.
+<h3>Heading</h3>
+<p/>'I'm NOT a serpent!' said Alice indignantly. 'Let me alone!'
+<p/>'Serpent, I say again!' repeated the Pigeon, but in a more subdued tone, and added with a kind of sob, 'I've tried every way, and nothing seems to suit them!'
+<p/>'I haven't the least idea what you're talking about,' said Alice.
+<p/>'I've tried the roots of trees, and I've tried banks, and I've tried hedges,' the Pigeon went on, without attending to her; 'but those serpents! There's no pleasing them!'
 </div>
 <!-- This div contains the contact form.-->
  <div id = contact>
@@ -62,12 +64,12 @@ As there seemed to be no chance of getting her hands up to her head, she tried t
     Email:
     <input type="text" name="email">
 		<br/>
-    <input type="submit" value="Submit">
+    <input type="submit" value="submit">
 </form>
 <script language="JavaScript">
 var frmvalidator  = new Validator("signup");
-frmvalidator.addValidation("name","req","Please provide your name");
-frmvalidator.addValidation("email","req","Please provide your email");
+frmvalidator.addValidation("name","req","Name is required!");
+frmvalidator.addValidation("email","req","Email is required!");
 frmvalidator.addValidation("email","email",
   "Please enter a valid email address");
 </script>
