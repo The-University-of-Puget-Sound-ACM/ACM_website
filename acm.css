@@ -1,10 +1,65 @@
 /*
-		Style sheet by Todd Detweiler
-		Created for use in the ACM website.
-		10/12/2013
-*/		
-		/*
-			Set the style for the page
-		*/
-		
-		
+		For the ACM website.
+		Built by Tori Vaz
+		9/25/15
+
+		Colors cheat sheet:
+		Lightest - #E6A7A5
+		Mid-light - #CD6F6D
+		Mid-dark - #481110
+		Darkest - #2C0100
+		Generated on paletton.com
+
+*/
+
+body{
+	background-color:#B05E5C;
+	margin:20px;
+}
+hr{
+	width:90%;
+	border-color:#561614;
+}
+h3{
+font-weight:bold;
+}
+#header{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color:#E6A7A5;
+	background-color:#561614;
+	padding:10px;
+	width:50%;
+	float:left;
+}
+#quote{
+	border-width:2px;
+	border-color:black;
+	border-style:double;
+	font-style:italic;
+	padding:10px;
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align:center;
+	float:right;
+}
+#maintext{
+	float:right;
+}
+#contact{
+	float:left;
+}
+#calendar{
+	float:left;
+}
+a.button:hover{
+	background-color:#E6A7A5;
+	color:#2C0100;
+}
+a.button{
+	background-color:#2C0100;
+  color:#E6A7A5;
+	padding:6px;
+	font-size:24px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+}

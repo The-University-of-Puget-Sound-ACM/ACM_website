@@ -2,19 +2,18 @@
 		Style sheet by Todd Detweiler
 		Created for use in software engeneering lab #3 but based off of an electronic commerce css eric and I did.
 		9/22/2013
-*/		
+*/
 		/*
 			Set the style for the page
 		*/
 		body{
 			margin: 0px;
 		}
-		
 		h2{
 			color: #FFFFFF;
 			font-weight:bold;
 		}
-		
+
 		h3{
 			color: #FFFFFF;
 			text-align:center;
@@ -27,9 +26,9 @@
 		div.Banner{
 			height: 170px;
 			position: relative;
-			background-image:url('../assets/tdetweiler/Banner.jpg'); 
+			background-image:url('../assets/tdetweiler/Banner.jpg');
 		}
-		
+
 		div.sideBar{
 			width:200px;
 			top:170px;
@@ -38,7 +37,7 @@
 			z-index: -1;
 			background-color: #002E8A;
 		}
-		
+
 		div.mainArea{
 			top: 170px;
 			margin-left: 200px;
@@ -50,10 +49,10 @@
 			background-color:#002E8A;
 			z-index: -2;
 		}
-		
+
 		/*Link appearance for the side nav, built off of a format eric and I created for cs250
 		*/
-		ul#navlist li a 
+		ul#navlist li a
 		{
 			width: 150px;
 			height:20px;
@@ -73,8 +72,8 @@
 			border-bottom: 1px solid #fff;
 			background: #003663;
 		}
-		
-		ul#navlist 
+
+		ul#navlist
 		{
 			display: inline;
 			list-style: none;
