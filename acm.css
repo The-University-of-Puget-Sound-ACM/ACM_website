@@ -13,7 +13,7 @@
 */
 
 body{
-	background-color:#B05E5C;
+	background-color:#CCA3A1;
 	margin:20px;
 }
 hr{
@@ -46,23 +46,28 @@ font-weight:bold;
 	float:right;
 }
 #maintext{
-	font-family:"Trebuchet MS", Helvetica, sans-serif;
-	font-size:16px;
+	color:#F7CAC8;
+	background-color:#5C2120;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:24px;
 	float:right;
 	width:40%;
 	border:1px;
-	padding-right:100px;
+	padding-right:70px;
 	padding-left:30px;
+	margin-right:30px;
 	text-align: justify;
 }
 #maintext h2{
+	background-color:#CD6F6D;
+	padding:5px;
 	text-align: center;
 	color:#2C0100;
-	font-size:24px;
-	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:36px;
 }
 #maintext h3{
-	font-size:18px;
+	font-size:28px;
+		font-family:"Trebuchet MS", Helvetica, sans-serif;
 }
 
 #contact{
@@ -118,4 +123,9 @@ input[type=submit]:hover{
 		border:5px solid white;
 		width:75px;
 		height:75px;
+}
+.msg {
+	color:red;
+	font-family:"Lucida Console", Monaco, monospace;
+	font-size:14px;
 }
