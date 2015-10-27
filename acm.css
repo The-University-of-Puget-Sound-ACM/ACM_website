@@ -1,10 +1,131 @@
 /*
-		Style sheet by Todd Detweiler
-		Created for use in the ACM website.
-		10/12/2013
-*/		
-		/*
-			Set the style for the page
-		*/
-		
-		
+		For the ACM website.
+		Built by Tori Vaz
+		9/25/15
+
+		Colors cheat sheet:
+		Lightest - #E6A7A5
+		Mid-light - #CD6F6D
+		Mid-dark - #481110
+		Darkest - #2C0100
+		Generated on paletton.com
+
+*/
+
+body{
+	background-color:#CCA3A1;
+	margin:20px;
+}
+hr{
+	width:90%;
+	border-color:#561614;
+}
+h3{
+font-weight:bold;
+}
+#header{
+	margin-bottom:6px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color:#E6A7A5;
+	background-color:#561614;
+	text-align:center;
+	padding:8px;
+	width:45%;
+	float:left;
+}
+#quote{
+	border-width:2px;
+	border-color:black;
+	border-style:double;
+	font-style:italic;
+	padding:10px;
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align:center;
+	width:45%;
+	float:right;
+}
+#maintext{
+	color:#F7CAC8;
+	background-color:#5C2120;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:24px;
+	float:right;
+	width:40%;
+	border:1px;
+	padding-right:70px;
+	padding-left:30px;
+	margin-right:30px;
+	text-align: justify;
+}
+#maintext h2{
+	background-color:#CD6F6D;
+	padding:5px;
+	text-align: center;
+	color:#2C0100;
+	font-size:36px;
+}
+#maintext h3{
+	font-size:28px;
+		font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+#contact{
+	width:45%;
+	text-align:center;
+	font-size:18px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	color:#481110;
+	padding-bottom:10px;
+	margin-top:15px;
+	margin-bottom:15px;
+	border: 1px solid #2C0100;
+}
+input[type=submit]{
+	border-radius:5pm;
+	border:0;
+	width:80px;
+	height:25px;
+	color:#E6A7A5;
+	background-color:	#2C0100;
+	font-size:14px;
+	font-style:bold;
+	font-family:Tahoma;
+}
+input[type=submit]:hover{
+		background-color:#E6A7A5;
+			color:#2C0100;
+}
+#calendar{
+	float:left;
+}
+#nav a:hover{
+	background-color:#E6A7A5;
+	color:#2C0100;
+}
+#nav a{
+	display:table-cell;
+	width:160px;
+	margin-top:10px;
+	background-color:#2C0100;
+  color:#E6A7A5;
+	padding:6px;
+	font-size:24px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+}
+#logo{
+	float:left;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+#logo img{
+		border:5px solid white;
+		width:75px;
+		height:75px;
+}
+.msg {
+	color:red;
+	font-family:"Lucida Console", Monaco, monospace;
+	font-size:14px;
+}

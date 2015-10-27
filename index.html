@@ -1,32 +1,87 @@
 <!-- This is the standard DOCTYPE tag we will use -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-	
+
 	<head>
-	
-		<!-- 
+
+		<!--
 			This is the basic website for UPS ACM.
-			
+
 			index.html
 			Author: Todd Detweiler
 			Date: 10/12/2013
 		-->
-		
+
 		<!-- declare the character encoding (recommended) -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-		
+
 		<!-- The comment tag -->
-		
+
 		<!--******************************************* -->
 		<!-- a link to an external style sheet -->
-		<link rel="stylesheet" href="stylesheets/Todd_Detweiler_stylesheet.css"/>
-		
+		<link rel="stylesheet" href="acm.css"/>
+
 		<!--*********************************** -->
 		<!-- the title tag is required -->
 		<title>UPS ACM</title>
-		
+		<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+		<script language="JavaScript" src="scripts/mailconfirm.js" type="text/javascript"></script>
 	</head>
 	<body>
-	Hello World.
-	</body>
+<!-- The main banner at the top. -->
+ <div id = header><div id = logo><img src = 'upslogo.png'></div><h1> University of Puget Sound ACM </h1></div>
+ <!-- Some kind of quote or other secondary headline. -->
+ <div id = quote>“Computers can see everything,<br>But can they see why kids love the taste of Cinnamon Toast Crunch?”</div>
+ <hr>
+ <!-- A navigation bar with links to relevant sites or other pages. -->
+ <div id = nav>
+	 <a href='https://github.com/UPS-ACM'>GitHub</a>
+	 <a href='http://wacmups.wix.com/women'>WACM</a>
+	 <a href='https://www.acm.org/'>National ACM</a>
+ </div>
+<!-- A place to put a description or whatever other interesting text there is to post. -->
+<div id = maintext>
+	<h2>Welcome to ACM</h2>
+	<h3>Ongoing Projects</h3>
+	<ul>
+		<li>Rover</li>
+		<li>ACM Website</li>
+		<li>Sustainability App</li>
+	</ul>
+
+</div>
+<!-- This div contains the contact form.-->
+ <div id = contact>
+ <!---This is a modified free contact form + validation script,
+ provided by html-form-guide.com. --->
+ <h3> Join our Mailing List! </h3>
+<script language="JavaScript">
+	var confirm = getUrlVars()['confirmed'];
+	if(confirm == 1){
+		console.log("Confirmed!");
+		document.write("<p class = 'msg'>Your message has been sent!</p>");
+	}
+ </script>
+ <form method="post" name="signup" action="signup.php">
+    Name:
+    <input type="text" name="name">
+		<br/>
+    Email:
+    <input type="text" name="email">
+		<br/>
+    <input type="submit" value="submit">
+</form>
+<script language="JavaScript">
+var frmvalidator  = new Validator("signup");
+frmvalidator.addValidation("name","req","Name is required!");
+frmvalidator.addValidation("email","req","Email is required!");
+frmvalidator.addValidation("email","email",
+  "Please enter a valid email address");
+</script>
+</div>
+<!-- This contains an embedded Google Calendar. -->
+<div id = calendar>
+<iframe src="https://www.google.com/calendar/embed?showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=7u9ah6abnf36tn0sot05sbqk0k%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="500" height="200" frameborder="0" scrolling="no"></iframe>
+</div>
+</body>
 </html>
